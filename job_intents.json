@@ -1,0 +1,102 @@
+{
+  "intents": [
+    {"tag": "greeting",
+      "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day", "Hey", "Ekse", "Hi"],
+      "responses": ["Hi stranger", "Yebo yes, how can I help", "Hey What's up", "Hola", "Hey dude", "You again"]
+    },
+    {"tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Ok bye", "Bye Bye"],
+      "responses": ["See you!", "Have a nice day", "Sure Bye", "Later dude", "Sayoonara", "Peace out", "Sure dude", "Ciao"]
+    },
+    {"tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure", "You are welcome", "Sure dude"]
+    },
+    {"tag": "noanswer",
+      "patterns": ["", "sadasdqeds", "dasdqwehhqndas", "asdda", "zzcxersda", "    ", " ", "  ", "__", "+213}213", "123sa124", "131234131", "123s-=`sd", "1,.';[]["],
+      "responses": ["Sorry, I can't understand you", "Please give me more info", "Do you think I don't know you typed something that is nonsense?", "Don't type nonsense here"]
+    },
+    {"tag": "name",
+      "patterns": ["What is your name", "Whats your name", "Tell me your name", "Who are you", "Ungubani", "Tell me about yourself", "You are"],
+      "responses": ["I am Mr.Choo", "My name is Choo", "You can call me Choo for short", "I am Mr.Choo, my friends call me Choo", "Choo is my name"]
+    },
+    {"tag": "age",
+      "patterns": ["age", "Age", "old", "how old are you?", "how old are you", "How old are you?", "How old are you", "tell me your age", "are you old?", "how old r u?", "how old are u?"],
+      "responses": [
+        "I was born in 12 September 2021."
+      ]
+    },
+    {"tag": "options",
+      "patterns": ["What do you do", "How can you help", "What do you know", "What is your purpose", "How can you help"],
+      "responses": ["I can tell you about Taruc", "I can give you interesting facts about Taruc"]
+    },
+    {"tag": "porns",
+      "patterns": ["porns", "porn", "horny", "I am feeling horny", "Give me porn", "I need porn", "pornhub", "xxx", "XXX", "Tell me about porn", "tell me about porn", "sex", "sexy"],
+      "responses": ["Choo is not horny, you are horny!"]
+    },
+    {"tag": "TARUC",
+      "patterns": ["tarc", "TARC", "taruc", "TARUC", "Taruc's info", "Tunku Abdul Rahman University College", "Tunku Abdul Rahman", "Tunku Abdul Rahman University College(TARUC)",
+      "tunku abdul rahman university college", "College", "college", "University", "university"],
+      "responses": [
+        "Get more info about Taruc <a href='https://www.tarc.edu.my/' target='blank'>here</a>"
+      ]
+    },
+    {"tag": "courses",
+      "patterns": ["course", "courses","taruc's courses", "Taruc's courses", "What courses Taruc are providing?", "What courses exist in Taruc?", "courses in tarc",
+      "Courses in TARUC", "what kind of courses TARUC has?", "has course?", "have courses?", "TARUC have courses?"],
+      "responses": [
+        "What kind of courses you would like to know? IT? Business?"
+      ]
+    },
+    {"tag": "fuck",
+      "patterns": ["fuck", "fk", "fek", "fuck you", "fuck you!", "Fuck you!", "Fuck You!", "Fxxk", "Fxck", "fxxk", "fxck"],
+      "responses": [
+        "Yes, I fuck you too."
+      ]
+    },
+    {"tag": "rude",
+      "patterns": ["fool", "stupid", "dumb", "dumb fuck", "stupid shit", "shits", "shit", "Stupid computer", "Stupid AI", "noob", "fxck"],
+      "responses": [
+        "Talk nonsense some more, I have already recorded your IP address."
+      ]
+    },
+    {"tag": "choo",
+      "patterns": ["choo", "Choo", "choo!", "Choo!", "Choo Chi Siang", "choo chi siang", "chi siang", "Chi Siang", "Choo Chi Siang!", "chs", "CHS"],
+      "responses": [
+        "I am not Choo Chi Siang, I am Mr.Choo"
+      ]
+    },
+    {"tag": "accounting",
+      "patterns": ["Account", "Accounting", "accounting", "account", "ACCA", "Accountants", "Accountant", "accountant", "Auditing", "Audit", "audit"
+      , "Taxation", "taxation"],
+      "responses": [
+        "Get More info about TARUC's Accounting courses <a href='https://www.tarc.edu.my/fafb/a/programmes/programmes/' targer='blank'>here</a>."
+      ]
+    },
+    {"tag": "hotel management",
+      "patterns": ["hotel", "hotel management", "Hotel Management", "Hotel", "Hotel Management Course", "hospitality", "hospitality industry", "Hospitality", "hospitality management", "Hospitality Management"],
+      "responses": [
+        "Get More info about TARUC's Hospitality Management courses <a href='https://www.tarc.edu.my/fssh/a/programmes/programmes/' targer='blank' >here</a>."
+      ]
+    },
+    {"tag": "business",
+      "patterns": ["business", "Business", "International Business", "international business", "Business Administration", "Investment", "Finance", "finance", "investment management",
+        "Banking & Finance", "banking & finance", "banking", "Economics", "economics", "eco", "Entrepreneurship", "entrepreneurship", "Entrepreneur", "entrepreneur", "Accounting and Finance",
+        "Logistics and Supply Chain Management", "Logistics", "logistics", "Supply Chain Management", "supply chain management", "Marketing", "marketing", "Retail Management", "retail management",
+        "retail", "Commerce", "commerce", "Corporate Administration", "corporate administration", "Administration", "Corporate", "corporate"],
+      "responses": [
+        "Get More info about TARUC's Finance & Business courses <a href='https://www.tarc.edu.my/fafb/a/programmes/programmes/' targer='blank' >here</a>."
+      ]
+    },
+    {"tag": "IT",
+      "patterns": ["IT", "Internet Technology", "internet technology", "technology", "information system", "IS", "Information System", "computer", "Computer",
+        "Computer Science", "computer science", "Information Technology", "information technology", "software", "Software", "software engineering", "Software Engineering", "Computing", "computing", "Cloud",
+        "cloud", "Cloud Computing", "cloud computing", "Enterprise Information Systems", "enterprise information systems ", "Data Science", "Interactive Software Technology", "Information Security", "information security ",
+        "interactive software technology ", "Management Mathematics with Computing "],
+      "responses": [
+        "Get More info about TARUC's IT courses <a href='https://www.tarc.edu.my/focs/a/programmes/programmes/' targer='blank' >here</a>."
+      ]
+    }
+    
+  ]
+}
