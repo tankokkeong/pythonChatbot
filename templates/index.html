@@ -44,7 +44,7 @@
                 
             </div>
 
-            <div class="message-container" id="response">
+            <div class="message-container" id="response-container">
 
                 <!-- <div class="human-message-flex">
                     <div class="human-message">
@@ -54,14 +54,16 @@
                     </div>
                 </div> -->
 
-                <div class="bot-message-flex">        
-                    <div class="bot-message">
-                        <div class="bot-message-display">
-                            Tell me something interesting!
+                <div id="response">
+                    <div class="bot-message-flex">        
+                        <div class="bot-message">
+                            <div class="bot-message-display">
+                                Tell me something interesting!
+                            </div>
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="bot-message-flex" id="bot-typing-display" style="display: none;">
                     <div class="bot-message-typing">
                         Typing<span id="dots-container"></span>
@@ -107,7 +109,7 @@
         }, 500);
 
         function scrollToBottom() {
-            var messages = document.getElementById("response");
+            var messages = document.getElementById("response-container");
             messages.scrollTop = messages.scrollHeight;
         }
 
@@ -178,7 +180,6 @@
             }
         }
 
-        typingDots();
     </script>
 
   </body>
