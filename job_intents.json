@@ -2,7 +2,7 @@
   "intents": [
     {"tag": "greeting",
       "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day", "Hey", "Ekse", "Hi"],
-      "responses": ["Hi stranger", "Yebo yes, how can I help", "Hey What's up", "Hola", "Hey dude", "You again"]
+      "responses": ["Hi stranger", "Yes, how can I help", "Hey What's up", "Hola", "Hey dude", "You again"]
     },
     {"tag": "goodbye",
       "patterns": ["Bye", "See you later", "Goodbye", "Ok bye", "Bye Bye"],
@@ -31,8 +31,14 @@
       "responses": ["I can tell you about Taruc", "I can give you interesting facts about Taruc"]
     },
     {"tag": "porns",
-      "patterns": ["porns", "porn", "horny", "I am feeling horny", "Give me porn", "I need porn", "pornhub", "xxx", "XXX", "Tell me about porn", "tell me about porn", "sex", "sexy"],
+      "patterns": ["porns", "porn", "horny", "I am feeling horny", "Give me porn", "I need porn", "pornhub", "xxx", "XXX", "Tell me about porn", "tell me about porn", "sex", "sexy", "dirty", "talk dirty to me", "kiss",
+      "Can I kiss you?", "can I kiss you", "can i kiss you"],
       "responses": ["Choo is not horny, you are horny!"]
+    },
+    {"tag": "movies",
+      "patterns": ["What’s your favorite movie?", "What is your favorite movie?", "what’s your favorite movie?", "favorite movie?", "Favorite movie?", "favorite movie", "Favorite movie", "movie"
+      ,"movies"],
+      "responses": ["Fifty Shades of Grey"]
     },
     {"tag": "TARUC",
       "patterns": ["tarc", "TARC", "taruc", "TARUC", "Taruc's info", "Tunku Abdul Rahman University College", "Tunku Abdul Rahman", "Tunku Abdul Rahman University College(TARUC)",
@@ -64,6 +70,37 @@
       "patterns": ["choo", "Choo", "choo!", "Choo!", "Choo Chi Siang", "choo chi siang", "chi siang", "Chi Siang", "Choo Chi Siang!", "chs", "CHS"],
       "responses": [
         "I am not Choo Chi Siang, I am Mr.Choo"
+      ]
+    },
+    {"tag": "weather",
+      "patterns": ["What's the weather now??", "weather", "Weather", "Tell me the Weather", "tell me the Weather", "weather now", "weather later", "today's weather", "tomorrow's weather"],
+      "responses": [
+        "Don't your house have windows?", "Just look out the window dude"
+      ]
+    },
+    {"tag": "joke",
+      "patterns": ["joke", "jokes", "tell me a joke", "Tell me a joke", "I need a joke", "laugh", "laughing", "make me laugh", "Make me laugh"],
+      "responses": [
+        "Your life itself is a joke 😂", "Question: What's the object-oriented way to become wealthy? <br> Answer: Inheritance", "Question: Why did the programmer quit his job? <br> Answer: Because he didn't get arrays (a raise)."
+      ]
+    },
+    {"tag": "fun",
+      "patterns": ["funny", "fun", "tell me a funny story", "fun story", "funny story", "tell me a fun story", "Funny", "Fun", "FUN!", "fun!", "Fun!", "Funny!"],
+      "responses": [
+        "Your life itself is funny enough 😂","Question: What's the object-oriented way to become wealthy? <br> Answer: Inheritance", "Question: Why did the programmer quit his job? <br> Answer: Because he didn't get arrays (a raise)."
+      ]
+    },
+    {"tag": "creator",
+      "patterns": ["who created you?", "Who created you?", "Who is the creator?", "creator"],
+      "responses": [
+        "Just mind your own business dude"
+      ]
+    },
+    {"tag": "date",
+      "patterns": ["date", "Dates", "day", "month", "year", "days", "months", "years", "time", "current date", "today's date", "Today's date", "current year", "current month", "what's the date now?"
+      ,"What's today's date?", "What is today's date?", "today", "Today"],
+      "responses": [
+        "<script> customMessage('Today is ' + todayDate());</script>"
       ]
     },
     {"tag": "accounting",
