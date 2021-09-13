@@ -90,3 +90,21 @@
     justify-content: flex-start;
     max-width: 50%;
 }
+
+.bot-message-typing{
+    color: black;
+    justify-content: flex-start;
+    max-width: 50%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.typing-dots{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.dots-container{
+    position: relative;
+    left: 5px;
+}

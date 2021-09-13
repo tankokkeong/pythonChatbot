@@ -62,6 +62,12 @@
                     </div>
                 </div>
 
+                <div class="bot-message-flex" id="bot-typing-display" style="display: none;">
+                    <div class="bot-message-typing">
+                        Typing<span id="dots-container"></span>
+                    </div>
+                </div>
+
             </div>
             
             <div class="input-section">
@@ -85,6 +91,21 @@
 
 
     <script>
+        var dot = 0;
+
+        setInterval(function typingDots(){
+            var dots_container = document.getElementById("dots-container");
+
+            if(dot != 3){
+                dots_container.innerHTML = dots_container.innerHTML + ".";
+                dot++;
+            }
+            else{
+                dot = 0;
+                dots_container.innerHTML = "";
+            }
+        }, 500);
+
         function scrollToBottom() {
             var messages = document.getElementById("response");
             messages.scrollTop = messages.scrollHeight;
@@ -95,8 +116,12 @@
                 event.preventDefault();
 
                 if($("#question").val().trim().length != 0){
+
+                    var bot_typing_display = document.getElementById("bot-typing-display");
+
                     //Get user's input
                     var user_input = $("#question").val();
+
 
                     console.log(user_input)
 
@@ -111,6 +136,9 @@
                             '</div>'
                     );
 
+                    //Display bot typing
+                    bot_typing_display.style.display = "";
+
                     //Scroll to bottom
                     scrollToBottom();
 
@@ -124,6 +152,9 @@
                             question: user_input
                         },
                         success: function(result) {
+                            //Remove bot typing
+                            bot_typing_display.style.display = "none";
+
                             $("#response").append(
                                 '<div class="bot-message-flex">' +
                                     '<div class="bot-message">' +
@@ -146,6 +177,8 @@
                 
             }
         }
+
+        typingDots();
     </script>
 
   </body>
